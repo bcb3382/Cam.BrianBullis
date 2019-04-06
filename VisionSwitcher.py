@@ -28,19 +28,19 @@ currentTime = currentTimeTime.hour * 3600 + currentTimeTime.minute * 60 + curren
 
 # Is it before sunrise?
 def beforeSunrise():
-    return currentTime > sunriseTime
+    return currentTime < sunriseTime
 
 # Is it after sunrise?
 def afterSunrise():
-    return currentTime < sunriseTime
+    return currentTime > sunriseTime
 
 # Is it before sunset?
 def beforeSunset():
-    return currentTime > sunsetTime
+    return currentTime < sunsetTime
 
 # Is it after sunset?
 def afterSunset():
-    return currentTime < sunsetTime
+    return currentTime > sunsetTime
 
 # If sunrise has passed but sunset has not, day vision should be active
 def dayVision():
