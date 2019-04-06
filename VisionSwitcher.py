@@ -54,9 +54,11 @@ if __name__ == '__main__':
     # Call the DayVision script to make it day vision
     if dayVision():
         DayVision.main()
+        exit(1)
     # Call the NightVision script to make it night vision
     if nightVision():
         NightVision.main()
-    # ¯\_(ツ)_/¯
+        exit(1)
+    # What else?
     else:
         exit(0)
